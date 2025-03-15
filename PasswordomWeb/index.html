@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon-password.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+<title>Password Generator</title>
+</head>
+<body>
+<div class="form">
+    <h1>Password Generator</h1>
+
+    <div class="settings">
+        <div class="setting">
+            <input type="text" id="result" class="form-result" placeholder="Place for the generated password">
+            <button class="form-copy-button" id="copy"/>
+        </div>
+    <div class="setting">
+        <label>Password Length</label>
+        <input type="number" id="length" min="4" max="100" value="20"/>
+    </div>
+    <div class="setting">
+        <label>Include uppercase letters</label>
+        <input type="checkbox" id="uppercase" checked/>
+    </div>
+    <div class="setting">
+        <label>Include lowercase letters</label>
+        <input type="checkbox" id="lowercase" checked/>
+    </div>
+    <div class="setting">
+        <label>Include numbers</label>
+        <input type="checkbox" id="number" checked/>
+    </div>
+    <div class="setting">
+        <label>Include special symbols</label>
+        <input type="checkbox" id="symbol" checked/>
+    </div>
+    </div>
+    <button class="button-generate" id="generate" >Generate Password</button>
+    <h1>Check a strength of the password</h1>
+    <div class="settings">
+
+        <div id="passwordStrength">Strength of password: <span id="strengthResult"></span>
+        <input type="text" id="passwordInput" class="form-password-check" placeholder="Enter password">
+        <h1>What affects password strength:</h1>
+        <div class="setting">
+            <label>• At least one lowercase character</label>
+        </div>
+        <div class="setting">
+            <label>• At least one uppercase character</label>
+        </div>
+        <div class="setting">
+            <label>• At least one number</label>
+        </div>
+        <div class="setting">
+            <label>• At least one special character</label>
+        </div>
+        <div class="setting">
+            <label>• At least 8 characters</label>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

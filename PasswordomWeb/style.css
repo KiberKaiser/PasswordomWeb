@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font: bold 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(79,65,162,1) 0%, rgba(55,2,158,1) 88%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 30px;
+}
+.form{
+    background-color: #1E1E1E;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding:50px;
+    padding-top: 10px;
+    width: 600px;
+    max-width: 100%;
+}
+.form-result-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.form-result {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-copy-button {
+    width: 40px;
+    height: 40px;
+    background: #3B3B98 url('images/copy.png') no-repeat center;
+    background-size: 20px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.form-copy-button:hover {
+    background-color: #575FCF;
+    transform: scale(1.1);
+}
+
+.input-form-checker{
+    border:none;
+    background: #333333;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    margin: 20px 0;
+    height:50px;
+    width: 100%;
+}
+.button-generate {
+
+    border: none;
+    background-color:#3B3B98;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+
+}
+#passwordInput {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px ;
+    background-color: #333333;
+    color: #fff;
+}
+
+#strengthResult {
+    font-weight: bold;
+}
+.none {
+    color: white;
+}
+.default, .weak {
+    color: #F6354C;
+}
+.normal {
+    color: #7FF66F;
+}
+.hard {
+    color: #43F005;
+}
+.strong {
+    color: #595EF0;
+}
